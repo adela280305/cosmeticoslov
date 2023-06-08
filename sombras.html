@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu lateral dinamico</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="container">
+        <div class="sidebar">
+            <div class="side-hide">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+
+
+            <img src="imagenes/LOGO.png" width="120" alt="LOGO">
+            <ul>
+                <li><a href="inicio.html">INICIO</a></li>
+                <li><a href="labiales.html">LABIALES</a></li>
+                <li><a href="sombras.html">SOMBRAS</a></li>
+                <li><a href="lineadores.html">LINEADORES</a></li>
+                <li><a href="naturales.html">NATURALES</a></li>
+                <li><a href="bases.html">BASES</a></li>
+                <li><a href="mas.html">MAS</a></li>
+            </ul>
+        </div>
+        
+        <div class="content">
+            <h2>SOMBRAS</h2>
+            
+                <center><img src="imagenes/sombras.jpg" width="600" alt="LOGO"></center>
+
+
+            <CENTER><button>Mostrar Menu</button></CENTER>
+        </div>
+        
+
+    </section>
+
+    <!-- JS jQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+
+        // Mostrar Sidebar
+        $("button").on('click', function() {
+            $(".container").toggleClass("show");
+        });
+
+        $(".side-hide").on('click', function() {
+            $(".container").toggleClass("show");
+        })
+
+    </script>
+
+</body>
+
+</html>
